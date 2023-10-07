@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flappy Bird Clone</title>
+    <style>
+        /* Add CSS styles for your game here */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #70c5ce;
+        }
+
+        #game-container {
+            position: relative;
+            width: 400px;
+            height: 600px;
+            border: 2px solid #000;
+            overflow: hidden;
+        }
+
+        #bird {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            background-color: #f77;
+            transition: transform 0.2s;
+        }
+
+        .pipe {
+            position: absolute;
+            width: 60px;
+            background-color: #333;
+        }
+
+        .pipe.top {
+            height: 200px;
+            top: 0;
+        }
+
+        .pipe.bottom {
+            height: 200px;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="game-container">
+        <div id="bird"></div>
+        <!-- Pipes will be dynamically added here -->
+    </div>
+
+    <script>
+        // JavaScript for your Flappy Bird game logic will go here
+    </script>
+</body>
+</html>
